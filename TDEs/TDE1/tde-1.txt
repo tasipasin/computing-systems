@@ -1,0 +1,4 @@
+1. a) Os semáforos server para sincronização das tarefas restringindo o acesso de um recurso ou comunicação entre tarefas.
+b) Semáforos Mutex implementa a herança de prioridade, que aumenta a prioridade da tarefa que está usando o semáforo quando é interrompida por outra tarefa que também está tentando usar o semáforo.
+c) xSemaphoreGive(): Libera um semáforo que foi criado anteriormente. A função recebe como parâmetro a variável que foi utilizada para criar o semáforo, que serve como indicação do que deve ser liberado;
+xSemaphoreTake(): Recupera um semáforo que foi criado anteriormente. O método deve ser chamado apenas por tasks sendo executadas, portanto não pode ser chamada por agendadores no estado de inicialização. Também não pode ser chamada dentro de uma seção crítica ou enquanto o agendados estiver suspenso.
